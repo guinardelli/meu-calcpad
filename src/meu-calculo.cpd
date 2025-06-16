@@ -1,0 +1,4 @@
+FCK=40MPa
+a=10cm
+b=20cm
+c=a*b*FCK
