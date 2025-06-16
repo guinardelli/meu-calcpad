@@ -1,4 +1,28 @@
-FCK=40MPa
-a=10cm
-b=20cm
-c=a*b*FCK
+"Calculadora de Concreto Simples
+"<hr style='border: 2px solid #1976D2;'>
+
+"<h2 style='color: #1976D2;'>📊 Cálculo de Resistência</h2>
+
+'Resistência do concreto: FCK = ? {40}'MPa
+'Dimensão A: a = ? {10}'cm  
+'Dimensão B: b = ? {20}'cm
+
+#post
+"<h3 style='color: #2E7D32;'>📋 Resultados:</h3>
+
+'Área da seção: A = a × b = 'a*b'cm²
+
+'Força de compressão: F = A × FCK = '(a*b*FCK/100)'kN
+
+#if a*b >= 200
+    "<span style='color: green;'>✅ Seção adequada</span>
+#else
+    "<span style='color: red;'>❌ Seção pequena</span>  
+#end if
+
+"<p style='background: #E3F2FD; padding: 10px; border-radius: 5px;'>
+"<b>Resumo:</b><br>
+"Seção: 'a' × 'b' cm<br>
+"Área: 'a*b' cm²<br>  
+"Capacidade: '(a*b*FCK/100)' kN
+"</p>
